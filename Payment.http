@@ -1,6 +1,9 @@
 @Payment_HostAddress = http://localhost:5276
 
-GET {{Payment_HostAddress}}/weatherforecast/
-Accept: application/json
+POST {{Payment_HostAddress}}/payments/cards/validate
+Content-Type: application/json
 
+{
+    "cardNumber": "4242 4242 4242 42412"
+}
 ###
